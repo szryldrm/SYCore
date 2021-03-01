@@ -8,7 +8,27 @@ namespace SYCore.Utilities.Messages
 {
     public static class GeneralMessages
     {
-        public static string ERROR_MESSAGE = "SORRY, AN ERROR HAS OCCURED! DETAILS: ";
+        public static string ERROR_MESSAGE(string langCode = null)
+        {
+            if (langCode.Equals("TR", StringComparison.OrdinalIgnoreCase))
+            {
+                return "UZGUNUM, BIR HATA OLUSTU! DETAYLAR: ";
+            }
+            else if (langCode.Equals("DE", StringComparison.OrdinalIgnoreCase))
+            {
+                return "ENTSCHULDIGUNG, EIN FEHLER IST AUFGETRETEN! EINZELHEITEN: ";
+            }
+            else if (langCode.Equals("ES", StringComparison.OrdinalIgnoreCase))
+            {
+                return "LO SENTIMOS, HA OCURRIDO UN ERROR! DETALLES: ";
+            }
+            else if (langCode.Equals("RU", StringComparison.OrdinalIgnoreCase))
+            {
+                return "ИЗВИНИТЕ, ПРОИЗОШЛА ОШИБКА! ДЕТАЛИ: ";
+            }
+
+            return "SORRY, AN ERROR HAS OCCURRED! DETAILS: ";
+        }
 
         public static string NOT_FOUND(string name, string langCode = null)
         {
