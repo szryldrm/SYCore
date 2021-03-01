@@ -12,6 +12,7 @@ namespace SYCore.DataAccess.MongoRepository
     public interface IMongoRepository<TDocument> where TDocument : class, IDocument, new()
     {
         IQueryable<TDocument> AsQueryable();
+        Task<List<TDocument>> GetAll();
         IEnumerable<TDocument> FilterBy(
             Expression<Func<TDocument, bool>> filterExpression);
         IEnumerable<TProjected> FilterBy<TProjected>(
