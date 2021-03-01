@@ -32,7 +32,7 @@ namespace SYCore.CrossCuttingConcerns.Caching.Redis
         public RedisCacheManager(IRedisSettings redisSettings)
         {
             _distributedCache = ServiceTool.ServiceProvider.GetService<IDistributedCache>();
-            _redisEndpoint = new RedisEndpoint(redisSettings.RedisHostIP, Convert.ToInt32(redisSettings.RedisPort));
+            _redisEndpoint = new RedisEndpoint(redisSettings.RedisHostIP, Convert.ToInt32(redisSettings.RedisPort), redisSettings.RedisPassword);
         }
 
         public T Get<T>(string key)

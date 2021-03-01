@@ -40,13 +40,5 @@ namespace SYCore.DataAccess.MongoRepository
         Task DeleteByIdAsync(string id);
         void DeleteMany(Expression<Func<TDocument, bool>> filterExpression);
         Task DeleteManyAsync(Expression<Func<TDocument, bool>> filterExpression);
-
-        //bool Add(TDocument entity);
-        //bool Update(TDocument entity);
-        //bool Delete(string id);
-        //bool UpdateOne(FilterDefinition<TDocument> filter, UpdateDefinition<TDocument> update, UpdateOptions options = null);
-        //TDocument Get(FilterDefinition<TDocument> filter);
-        //List<TDocument> GetList(FilterDefinition<TDocument> filter = null);
-        //List<TDocument> GetProjectionList(ProjectionDefinition<TDocument> project, FilterDefinition<T> filter = null);
     }
 }

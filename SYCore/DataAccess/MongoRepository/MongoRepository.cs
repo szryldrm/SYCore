@@ -109,7 +109,6 @@ namespace SYCore.DataAccess.MongoRepository
             _collection.InsertMany(documents);
         }
 
-
         public virtual async Task InsertManyAsync(ICollection<TDocument> documents)
         {
             await _collection.InsertManyAsync(documents);

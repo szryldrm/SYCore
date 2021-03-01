@@ -8,5 +8,6 @@ namespace SYCore.Settings.RedisSettings
     {
         string RedisHostIP { get; set; }
         string RedisPort { get; set; }
+        string RedisPassword { get; set; }
     }
 }
