@@ -36,6 +36,11 @@ namespace SYCore.DataAccess.MongoRepository
             return _collection.AsQueryable();
         }
 
+        public virtual Task<List<TDocument>> GetAll()
+        {
+            return _collection.Find(_ => true).ToListAsync();
+        }
+
         public virtual IEnumerable<TDocument> FilterBy(
             Expression<Func<TDocument, bool>> filterExpression)
         {
