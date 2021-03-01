@@ -5,8 +5,8 @@
     <RepositoryUrl>https://github.com/szryldrm/SYCore</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Sezer YILDIRIM</Authors>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.8.0</AssemblyVersion>
+    <Version>1.0.10</Version>
+    <AssemblyVersion>1.0.10.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
